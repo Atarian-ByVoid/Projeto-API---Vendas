@@ -1,4 +1,4 @@
-package com.br.globalfinanceiro.vendas;
+package com.br.globalfinanceiro.vendas.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
