@@ -15,7 +15,6 @@ import com.br.globalfinanceiro.vendas.domain.Cliente;
 @Repository
 public class Clientes {
 
-
     private static String INSERT="Insert into cliente (nome) values (?)";
     private static String SELECT_ALL="SELECT * FROM CLIENTE";
 
@@ -28,7 +27,6 @@ public class Clientes {
         return cliente;
         
     }
-    
     public List<Cliente> obterTodos(){
         return jdbcTemplate.query(SELECT_ALL, new RowMapper<Cliente>(){
             @Override
