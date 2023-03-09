@@ -3,6 +3,8 @@ package com.br.globalfinanceiro.vendas.configuration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import com.br.globalfinanceiro.vendas.Annotations.Animal;
+
 @Configuration
 public class AnimalConfiguration {
 

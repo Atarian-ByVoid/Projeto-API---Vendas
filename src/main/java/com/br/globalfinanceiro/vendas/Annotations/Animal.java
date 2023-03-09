@@ -1,4 +1,4 @@
-package com.br.globalfinanceiro.vendas.configuration;
+package com.br.globalfinanceiro.vendas.Annotations;
 
 public interface Animal {
 

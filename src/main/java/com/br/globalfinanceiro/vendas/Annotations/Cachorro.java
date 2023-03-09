@@ -1,4 +1,4 @@
-package com.br.globalfinanceiro.vendas.configuration;
+package com.br.globalfinanceiro.vendas.Annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

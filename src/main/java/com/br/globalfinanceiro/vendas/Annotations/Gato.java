@@ -1,4 +1,4 @@
-package com.br.globalfinanceiro.vendas.configuration;
+package com.br.globalfinanceiro.vendas.Annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -13,7 +13,5 @@ import org.springframework.beans.factory.annotation.Qualifier;
 @Autowired
 @Qualifier("gato")
 public @interface Gato {
-    
 
-    
 }

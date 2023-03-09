@@ -8,9 +8,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.br.globalfinanceiro.vendas.configuration.Animal;
-import com.br.globalfinanceiro.vendas.configuration.Cachorro;
-import com.br.globalfinanceiro.vendas.configuration.Gato;
+import com.br.globalfinanceiro.vendas.Annotations.Animal;
+import com.br.globalfinanceiro.vendas.Annotations.Cachorro;
+import com.br.globalfinanceiro.vendas.Annotations.Gato;
 
 @SpringBootApplication
 @RestController
@@ -21,7 +21,7 @@ public class VendasApplication {
 	private String applicationName;
 
 
-	@Gato
+	@Cachorro
 	private Animal animal;
 
 	@Bean(name ="executarAnimal")
