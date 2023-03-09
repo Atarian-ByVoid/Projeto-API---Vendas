@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.br.globalfinanceiro.vendas.Annotations.Animal;
 import com.br.globalfinanceiro.vendas.Annotations.Cachorro;
-import com.br.globalfinanceiro.vendas.Annotations.Gato;
 
 @SpringBootApplication
 @RestController

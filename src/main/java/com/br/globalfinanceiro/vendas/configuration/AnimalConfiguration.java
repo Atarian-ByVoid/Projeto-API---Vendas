@@ -8,7 +8,7 @@ import com.br.globalfinanceiro.vendas.Annotations.Animal;
 @Configuration
 public class AnimalConfiguration {
 
-    @Bean(name="cahorro")
+    @Bean(name="cachorro")
     public Animal cachorro(){
         return new Animal(){
             @Override
