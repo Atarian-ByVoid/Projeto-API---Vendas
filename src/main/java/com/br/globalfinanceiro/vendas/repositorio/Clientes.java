@@ -18,7 +18,7 @@ public class Clientes {
     private static String INSERT="Insert into cliente (nome) values (?)";
     private static String SELECT_ALL="SELECT * FROM CLIENTE";
     private static String UPDATE="update cliente set nome=? where id=?";
-    private static String DELETE="delete from cliente where nome id=?";
+    private static String DELETE="delete from cliente where id=?";
  
 
 
@@ -46,14 +46,17 @@ public class Clientes {
 
     }
 
-    public List<Clientes> buscarPorNome(String nome){
-        return jdbcTemplate.query(SELECT_ALL, new RowMapper, null, null)
+    public List<Cliente> buscarPorNome(String nome){
+    
+        return  jdbcTemplate.query(SELECT_ALL, obterClienteMapper());
     }
-
 
     //lista todos os clientes
     public List<Cliente> obterTodos(){
-        return jdbcTemplate.query(SELECT_ALL, new RowMapper<Cliente>(){
+        return jdbcTemplate.query(SELECT_ALL, obterClienteMapper());
+    }
+    private RowMapper<Cliente> obterClienteMapper() {
+        return new RowMapper<Cliente>(){
             @Override
             public Cliente mapRow(ResultSet resultSet, int rowNum) throws SQLException {
                 Integer id = resultSet.getInt("id");
@@ -61,7 +64,7 @@ public class Clientes {
                 return new Cliente(id,nome);
             }
                 
-        });
+        };
     }
 
 
